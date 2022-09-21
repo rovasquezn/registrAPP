@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title id="headerfooter">Inicio de sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div class="margencito">
+    <br>
+  <ion-item>
+    <ion-label position="stacked">USUARIO:</ion-label>
+    <ion-input type="text" placeholder="Ingrese usuario"> </ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="stacked">CONTRASENA:</ion-label>
+    <ion-input type="password" placeholder="Ingrese contrasena"> </ion-input>
+  </ion-item>
+</div>
+
+
+<div class="margencito">
+  <ion-button class="btn" expand="block" (click)="irAlInicio()">INICIAR SESION</ion-button>
+
+
+  <ion-button class="btn" expand="block">CANCELAR</ion-button>
+</div>
+
+<div>
+  <ion-img class="logo" src="assets/images/logo.png"></ion-img>
+  </div>
+</ion-content>
+
+
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-title id="headerfooter">Inicio de sesion</ion-title>
+  </ion-toolbar> 
+</ion-footer>
+
+
+
+
+
+<!--
+<ion-content class="ion-padding">
+  <button ion-button (click)="irAlInicio()">Ir a inicio</button> 
+ </ion-content> -->
