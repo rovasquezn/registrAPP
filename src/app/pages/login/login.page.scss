@@ -1,0 +1,42 @@
+
+#usuario{
+    text-align: center;
+    color:chocolate;
+
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+
+#headerfooter{
+    text-align: center;
+    color:goldenrod;
+    font-size: 13px;	
+   
+}    
+
+.btn {
+    background-color:midnightblue; 
+    padding: 1%;
+    border-radius: 15px; 	
+    font-size: 15px;	
+}
+
+.margencito{
+    margin-top: 10%;
+}
+
+.fondo{
+    background-color:var(--ion-color-dark-contrast);
+}
+
+.logo{
+    
+    width: 100%;
+    padding-top: 15%;
+    
+}
+
+    
