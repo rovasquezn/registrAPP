@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { 
+  FormGroup, FormControl, Validators, FormBuilder
+} from '@angular/forms';
 
 @Component({
   selector: 'app-recuperar',
@@ -7,7 +11,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecuperarPage implements OnInit {
 
-  constructor() { }
+  constructor(){
+
+   }
+
 
   ngOnInit() {
   }
