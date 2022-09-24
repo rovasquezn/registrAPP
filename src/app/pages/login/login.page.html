@@ -12,18 +12,35 @@
   </ion-card-header>
 
   <ion-card-content>
-    <form [formGroup]="formularioLogin">
+    <form #formulario="ngForm" (ngSubmit)="onSubmit()">
       <ion-item>
         <ion-label position="stacked">USUARIO:</ion-label>
-        <ion-input formControlName="usuario" type="text" class="placeholders" placeholder="Ingrese nombre de usuario"> </ion-input>
+        <ion-input name="nombre" 
+                    type="text" 
+                    class="placeholders" 
+                    placeholder="Ingrese nombre de usuario"
+                    [(ngModel)]="usuario.nombre"
+                    required
+                    > </ion-input>
+
       </ion-item>
       
       <ion-item>
         <ion-label position="stacked">CONTRASENA:</ion-label>
-        <ion-input formControlName="password" type="password" class="placeholders" placeholder="Ingrese su contrasena"> </ion-input>
+        <ion-input name="password" 
+                    type="password" 
+                    class="placeholders" 
+                    placeholder="Ingrese contrasena"
+                    [(ngModel)]="usuario.password" 
+                    required
+                    > </ion-input>
       </ion-item>
-
-    <ion-button class="btn" expand="block" (click)="irAlInicio()">INICIAR SESION</ion-button>
+    <ion-button class="btn" 
+                expand="block" 
+                routerLink="/inicio" 
+                [disabled]= "formulario.invalid"
+                type = "submit"
+                >INICIAR SESION</ion-button>
   </form>
   </ion-card-content>
 
@@ -31,8 +48,9 @@
 
 <div>
   <br>
-<ion-button expand="block" class="btn" (click)="irArecuperar()">OLVIDE MI CONTRASENA</ion-button>
+<ion-button expand="block" class="btn" routerLink="/recuperar">OLVIDE MI CONTRASENA</ion-button>
 </div>
+
 
   <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
  

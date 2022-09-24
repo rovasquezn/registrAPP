@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { 
-  FormGroup, FormControl, Validators, FormBuilder
-} from '@angular/forms';
+import { DataserviceService } from 'src/app/servicios/dataservice.service';
  
 @Component({
   selector: 'app-login',
@@ -11,28 +8,20 @@ import {
 })
 export class LoginPage implements OnInit {
 
-  formularioLogin: FormGroup;
+  usuario = { 
+    nombre: "",
+    password:""
+  }
 
-  constructor(private router: Router, public fb: FormBuilder){
+  constructor(private data:DataserviceService){
 
-    this.formularioLogin = this.fb.group({
-      'usuario': new FormControl("",Validators.required),
-      'password': new FormControl("",Validators.required)
-    })
-
-  };
-
- //constructor(private router: Router){}
-  irAlInicio(){
-    this.router.navigate(['/inicio'])
-}
-
- irArecuperar(){
-    this.router.navigate(['/recuperar'])
-
-}
+  }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+    this.data.disparador.emit(this.usuario.nombre)
   }
 
 }

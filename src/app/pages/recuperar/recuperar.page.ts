@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { 
-  FormGroup, FormControl, Validators, FormBuilder
-} from '@angular/forms';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-recuperar',
@@ -11,12 +8,26 @@ import {
 })
 export class RecuperarPage implements OnInit {
 
-  constructor(){
+  email: "";
+
+  constructor(private toasCtrl: ToastController){
 
    }
 
 
   ngOnInit() {
+  }
+  
+ 
+
+  async onSubmit(position: 'middle') {
+    const toast = await this.toasCtrl.create({
+      message: 'Contrasena enviada a su mail',
+      duration: 2000,
+      position: 'top'
+    });
+
+    await toast.present();
   }
 
 }
