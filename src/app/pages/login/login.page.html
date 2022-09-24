@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title id="headerfooter">Inicio de sesion</ion-title>
+    <ion-title id="headerfooter">Inicio de sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -26,11 +26,11 @@
       </ion-item>
       
       <ion-item>
-        <ion-label position="stacked">CONTRASENA:</ion-label>
+        <ion-label position="stacked">CONTRASEÑA:</ion-label>
         <ion-input name="password" 
                     type="password" 
                     class="placeholders" 
-                    placeholder="Ingrese contrasena"
+                    placeholder="Ingrese contraseña"
                     [(ngModel)]="usuario.password" 
                     required
                     > </ion-input>
@@ -40,7 +40,7 @@
                 routerLink="/inicio" 
                 [disabled]= "formulario.invalid"
                 type = "submit"
-                >INICIAR SESION</ion-button>
+                >INICIAR SESIÓN</ion-button>
   </form>
   </ion-card-content>
 
@@ -48,7 +48,7 @@
 
 <div>
   <br>
-<ion-button expand="block" class="btn" routerLink="/recuperar">OLVIDE MI CONTRASENA</ion-button>
+<ion-button expand="block" class="btn" routerLink="/recuperar">OLVIDÉ MI CONTRASEÑA</ion-button>
 </div>
 
 
