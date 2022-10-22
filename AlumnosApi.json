@@ -1,0 +1,23 @@
+{
+  id: 1,
+  usuario: 'de.needham', 
+  contrasena: '123', 
+  seccion: '007V',
+  nombre_usuario: 'Derek Needham'
+}, 
+{
+  
+  id: 2,
+  usuario: 'ro.vasquezn', 
+  contrasena: '456', 
+  seccion: '007V',
+  nombre_usuario: 'Rodrigo Vásquez'
+},
+{
+  
+  id: 3,
+  usuario: 'ne.becerra', 
+  contrasena: '789', 
+  seccion: '001D',
+  nombre_usuario: 'Nelly Becerra'
+}

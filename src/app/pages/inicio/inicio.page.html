@@ -3,27 +3,34 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title id="headerfooter">Inicio</ion-title>
+    <ion-title id="headerfooter">Menu</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <br>
 <ion-card>
   <br>
   <ion-card-header>
 
     <ion-label>Bienvenido: {{nombreUsuario}} </ion-label>
 
-    <ion-card-subtitle>Escanea el código QR</ion-card-subtitle>
-  </ion-card-header>
+    <ion-card-subtitle>OPCIONES</ion-card-subtitle>
 
-  <ion-card-content>
-    <ion-img class="logo" src="assets/QR_scan.png"></ion-img>
-  </ion-card-content>
+  </ion-card-header>
 
 </ion-card>
 
+
+
+
+
+ <ion-img class="icono" routerLink="/scanner" src="assets/icon/code.png"></ion-img>
+
+<ion-img class="icono" routerLink="/alumnos" src="assets/icon/students.png"></ion-img>
+
+<ion-img class="icono" routerLink="/profesor" src="assets/icon/teacher.png"></ion-img>
+
+<ion-img class="icono" routerLink="/login" src="assets/icon/logout.png"></ion-img>
 
 
   <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>

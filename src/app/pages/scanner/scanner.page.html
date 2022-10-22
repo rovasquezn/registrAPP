@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title id="headerfooter">Scanner</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+<ion-card>
+  <br>
+  <ion-card-header>
+
+    <ion-card-subtitle>Escanea el código QR</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-button (click)="scan()">Leer QR</ion-button>
+    {{code}}
+    
+  </ion-card-content>
+
+</ion-card>
+
+
+
+  <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
+ 
+
+</ion-content>
