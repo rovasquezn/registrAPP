@@ -2,6 +2,7 @@ ion-content {
     --background: url("../../../assets/fondo.jpeg");
 }
 
+
 #usuario{
     text-align: center;
     color:chocolate;
@@ -17,6 +18,7 @@ ion-content {
     text-align: center;
     color:rgb(240, 182, 34);
     font-size: 14px;	
+    --ion-color-primary: hsl(221, 46%, 30%);
    
 }    
 
@@ -35,12 +37,9 @@ ion-content {
 
 }
 
-
 .logo{
     
     width: 100%;
     padding-top: 5%;
     
 }
-
-    

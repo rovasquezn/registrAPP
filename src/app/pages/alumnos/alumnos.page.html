@@ -1,30 +1,28 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>ALUMNOS</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    
+    <ion-title id="headerfooter">ALUMNOS</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
+<br>
+<ion-list *ngIf="listaAlumnos" color="">
+  <ion-item *ngFor='let alumn of listaAlumnos'>
+    <ion-label>
+      <h1>{{ alumn.nombre_usuario }}</h1>
 
-  <ion-list *ngIf="listaAlumnos">
+      <h2>{{ alumn.usuario }}</h2>
 
-<ion-item *ngFor='let alumn of listaAlumnos'>
+      <h3>{{ alumn.seccion }}</h3>
 
-<ion-avatar slot="start"> 
-
-</ion-avatar>
-
-
-<ion-label>
-
-<h2>{{ alumn.usuario }}</h2>
-
-<h3>{{ alumn.seccion }}</h3>
-
-</ion-label>
-
-</ion-item>
-
+    </ion-label>
+    <ion-icon name="arrow-forward" (click)="goToDetalles(alumn)"></ion-icon>
+  </ion-item>
 </ion-list>
-
 </ion-content>
