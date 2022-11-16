@@ -1,28 +1,43 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="micolor">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="/iniciodocentes"></ion-back-button>
     </ion-buttons>
     
-    <ion-title id="headerfooter">ALUMNOS</ion-title>
+    <ion-title id="headerfooter">Alumnos</ion-title>
 
   </ion-toolbar>
+
 </ion-header>
 
 
 <ion-content>
 <br>
-<ion-list *ngIf="listaAlumnos" color="">
+<ion-list *ngIf="listaAlumnos">
   <ion-item *ngFor='let alumn of listaAlumnos'>
+    <ion-avatar slot="start">
+      <img [src]='alumn.foto'>
+  </ion-avatar>
     <ion-label>
-      <h1>{{ alumn.nombre_usuario }}</h1>
+      <div class="titulo">{{ alumn.nombre_usuario }}</div>
 
-      <h2>{{ alumn.usuario }}</h2>
+      <div class="subtitulo">{{ alumn.usuario }}</div>
 
-      <h3>{{ alumn.seccion }}</h3>
+      <div class="subtitulo">{{ alumn.seccion }}</div>
+
 
     </ion-label>
     <ion-icon name="arrow-forward" (click)="goToDetalles(alumn)"></ion-icon>
   </ion-item>
 </ion-list>
+
+
+
+<ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>

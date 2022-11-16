@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'menu',
     pathMatch: 'full'
   },
   {
@@ -19,7 +19,8 @@ const routes: Routes = [
   {
     path: 'recuperar',
     loadChildren: () => import('./pages/recuperar/recuperar.module').then( m => m.RecuperarPageModule)
-  },  {
+  },
+  {
     path: 'menu',
     loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   },
@@ -35,6 +36,31 @@ const routes: Routes = [
     path: 'detalle-alumno',
     loadChildren: () => import('./pages/detalle-alumno/detalle-alumno.module').then( m => m.DetalleAlumnoPageModule)
   },
+  {
+    path: 'logindocentes',
+    loadChildren: () => import('./pages/logindocentes/logindocentes.module').then( m => m.LogindocentesPageModule)
+  },
+  {
+    path: 'registrarse',
+    loadChildren: () => import('./pages/registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
+  },  {
+    path: 'docentes',
+    loadChildren: () => import('./pages/docentes/docentes.module').then( m => m.DocentesPageModule)
+  },
+  {
+    path: 'iniciodocentes',
+    loadChildren: () => import('./pages/iniciodocentes/iniciodocentes.module').then( m => m.IniciodocentesPageModule)
+  },
+  {
+    path: 'registrarsedocentes',
+    loadChildren: () => import('./pages/registrarsedocentes/registrarsedocentes.module').then( m => m.RegistrarsedocentesPageModule)
+  },
+  {
+    path: 'detalle-docente',
+    loadChildren: () => import('./pages/detalle-docente/detalle-docente.module').then( m => m.DetalleDocentePageModule)
+  },
+
+
 
 ];
 

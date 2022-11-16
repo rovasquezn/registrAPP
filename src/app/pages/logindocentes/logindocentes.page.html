@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="headerfooter">Inicio de sesión Docentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br><br>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle class="placeholders">Ingreso de Datos</ion-card-subtitle>
+  </ion-card-header>
+ 
+  <ion-card-content>
+    <form [formGroup]="formDocente" (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label for="nombreDocente" class="placeholders" position="stacked">NOMBRE:</ion-label>
+        <ion-input formControlName="nombreDocente" 
+                    type="text" 
+                    class="placeholders" 
+                    [(ngModel)]="usuarioDocente.nombreDocente"
+                    placeholder="Ingrese nombre del docente"> </ion-input>
+
+      </ion-item>
+      
+      <ion-item>
+        <ion-label for="passwordDocente" class="placeholders" position="stacked">CONTRASEÑA:</ion-label>
+        <ion-input formControlName="passwordDocente" 
+                    type="password" 
+                    class="placeholders"
+                    [(ngModel)]="usuarioDocente.passwordDocente" 
+                    placeholder="5 a 10 caracteres"> </ion-input>
+      </ion-item>
+    <ion-button class="btn" type="submit" (click)="loginUsuarioDocente()">INICIAR SESIÓN DOCENTES</ion-button>
+  </form>
+
+  </ion-card-content>
+
+</ion-card>
+
+  
+
+<ion-button class="btn" routerLink="/recuperar">OLVIDÉ MI CONTRASEÑA</ion-button>
+
+<ion-button class="btn" routerLink="/registrarsedocentes">REGISTRARSE / CUENTA NUEVA</ion-button>
+
+
+
+  <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
+ 
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>
+
+
+
+<!--
+<ion-content class="ion-padding">
+  <button ion-button (click)="irAlInicio()">Ir a inicio</button> 
+ </ion-content> -->

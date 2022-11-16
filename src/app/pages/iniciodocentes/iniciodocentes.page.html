@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title id="headerfooter">MenuDocentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    
+    <ion-card-header>
+
+      <ion-label class="placeholders">Bienvenido: {{nombreUsuario}} </ion-label>
+      <br><br>
+      <ion-card-subtitle class="placeholders">OPCIONES DOCENTES</ion-card-subtitle>
+
+    </ion-card-header>
+  </ion-card>
+
+<ion-img class="icono" routerLink="/alumnos" src="assets/icon/listadoalumnos.png"></ion-img>
+
+
+<br><br><br>
+
+<ion-img (click)="logout()" id="iconosalir" routerLink="/menu" src="assets/icon/CerrarSesion.png"></ion-img>
+
+
+<ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
+
+</ion-content>
+
+
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>
+
+
+
+
+
+

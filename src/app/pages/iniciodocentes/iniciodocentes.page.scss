@@ -1,0 +1,70 @@
+ion-content {
+    --background: url("../../../assets/fondo.jpeg") 100%;
+}
+
+ion-toolbar{
+    background-color: var(--ion-color-micolor);
+}
+
+#usuario{
+    text-align: center;
+    color:chocolate;
+
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+
+#headerfooter{
+    text-align: center;
+    color:rgb(240, 182, 34);
+    font-size: 13px;
+   
+}    
+
+#iconosalir{
+    margin-left:38%;
+    width: 25%;
+    padding-bottom: 5%; 
+    margin-top: 20%;
+
+}   
+
+
+.btn {
+
+    border-radius: 10px; 	
+    font-size: 12px;	
+}
+
+
+.placeholders {
+    font-size: 13px;
+    text-align: center;	 
+
+}
+
+
+
+
+.logo{
+    position:static;
+    width: 100%;
+    transform: translatey(6%); 
+   
+    
+}
+
+.icono{
+    
+    float:left;
+    margin-left:33%;
+    width: 34%;
+    padding-bottom: 38%; 
+    padding-top: 10%;
+
+    
+}
+    

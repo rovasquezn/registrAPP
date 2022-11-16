@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/logindocentes"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="headerfooter">Nuevo registro docentes</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<br><br>
+  <ion-card>
+    <ion-card-header>
+      <br>
+      <ion-card-subtitle class="placeholders">Ingreso de Datos</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+    
+            <form [formGroup]="datosDocente">
+
+              <ion-item>
+                <ion-label class="placeholders" position="stacked" for="nombreDocente">INGRESE NOMBRE DEL DOCENTE:</ion-label>
+                
+                <ion-input type="text" formControlName="nombreDocente" class="placeholders" placeholder="5 a 15 caracteres"> </ion-input>
+              </ion-item>
+              
+              <ion-item>
+                <ion-label class="placeholders" position="stacked" for="passwordDocente">INGRESE UNA CONTRASENA:</ion-label>
+                <ion-input type="password" formControlName="passwordDocente" class="placeholders" placeholder="5 a 10 caracteres"> </ion-input>
+              </ion-item>
+            <ion-button class="btn" (click)="registroUsuarioDocente()">GUARDAR REGISTRO DOCENTE</ion-button>
+          </form>
+          <br>
+
+    </ion-card-content>
+  </ion-card>
+        
+  <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
+ 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>

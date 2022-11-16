@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/docentes"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="headerfooter">Detalle del Docente</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <img [src]="docente.foto"/>
+    <ion-card-header>
+      <ion-card-title class="titulo">NOMBRE: {{ docente.nombre_usuario }}</ion-card-title>
+    
+      <ion-card-subtitle class="subtitulo">E-MAIL: {{ docente.usuario }}</ion-card-subtitle>
+      <ion-card-subtitle class="subtitulo">SECCION: {{ docente.seccion }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content class="subtitulo2">
+      
+      Docente en DUOC UC
+   
+    </ion-card-content>
+  </ion-card>
+
+
+<ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>

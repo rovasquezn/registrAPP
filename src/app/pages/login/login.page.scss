@@ -2,6 +2,10 @@ ion-content {
     --background: url("../../../assets/fondo.jpeg");
 }
 
+ion-toolbar{
+    background-color: var(--ion-color-micolor);
+}
+
 
 #usuario{
     text-align: center;
@@ -17,29 +21,29 @@ ion-content {
 #headerfooter{
     text-align: center;
     color:rgb(240, 182, 34);
-    font-size: 14px;	
-    --ion-color-primary: hsl(221, 46%, 30%);
+    font-size: 13px;
    
 }    
 
 .btn {
-
     border-radius: 10px; 	
     font-size: 12px;	
+    width: 100%;
+    position:center;
+    
 }
 
-.margencito{
-    margin-top: 10%;
-}
+
 
 .placeholders {
-    font-size: 12px;	 
+    font-size: 14px;	 
 
 }
 
 .logo{
     
     width: 100%;
-    padding-top: 5%;
+    padding-top: 20%;
+
     
 }

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="micolor">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -8,35 +8,42 @@
 </ion-header>
 
 <ion-content>
-<ion-card>
-  <br>
-  <ion-card-header>
 
-    <ion-label>Bienvenido: {{nombreUsuario}} </ion-label>
+  <ion-card>
+    
+    <ion-card-header>
 
-    <ion-card-subtitle>OPCIONES</ion-card-subtitle>
+      <ion-label class="placeholders">Bienvenido: {{nombreUsuario}} </ion-label>
+      <br><br>
+      <ion-card-subtitle class="placeholders">OPCIONES ALUMNOS</ion-card-subtitle>
 
-  </ion-card-header>
+    </ion-card-header>
+  </ion-card>
+<br><br>
 
-</ion-card>
+<ion-img class="icono" routerLink="/scanner" src="assets/icon/asistencia.png"></ion-img>
 
-
-
-
-
- <ion-img class="icono" routerLink="/scanner" src="assets/icon/code.png"></ion-img>
-
-<ion-img class="icono" routerLink="/alumnos" src="assets/icon/students.png"></ion-img>
-
-<ion-img class="icono" routerLink="/profesor" src="assets/icon/teacher.png"></ion-img>
-
-<ion-img class="icono" routerLink="/login" src="assets/icon/logout.png"></ion-img>
+<ion-img class="icono" routerLink="/docentes" src="assets/icon/docentes.png"></ion-img>
 
 
-  <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
- 
+<br><br>
+
+<ion-img (click)="logout()" id="iconosalir" routerLink="/menu" src="assets/icon/CerrarSesion.png"></ion-img>
+
+
+<ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
 
 </ion-content>
+
+
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>
+
+
 
 
 

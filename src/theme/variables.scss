@@ -5,7 +5,7 @@
 :root {
   /** primary **/
   --primary:hsl(221, 46%, 30%); 
-  --ion-color-primary: hsl(221, 63%, 56%);
+  --ion-color-primary: hsl(221, 60%, 25%);
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -75,6 +75,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** micolor **/
+  --ion-color-micolor: #1b2d4d;
+	--ion-color-micolor-rgb: 56,70,127;
+	--ion-color-micolor-contrast: #ffffff;
+	--ion-color-micolor-contrast-rgb: 255,255,255;
+	--ion-color-micolor-shade: #313e70;
+	--ion-color-micolor-tint: #4c598c;
 }
 
 @media (prefers-color-scheme: dark) {

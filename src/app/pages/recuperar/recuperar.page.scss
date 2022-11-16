@@ -3,6 +3,10 @@ ion-content {
 }
 
 
+ion-toolbar{
+    background-color: var(--ion-color-micolor);
+}
+
 #usuario{
     text-align: center;
     color:chocolate;
@@ -14,18 +18,17 @@ ion-content {
 }
 
 .placeholders {
-    font-size: 12px;	 
+    font-size: 14px;	 
 
 }
 
+
 #headerfooter{
     text-align: center;
-    position: absolute;
     color:rgb(240, 182, 34);
-    font-size: 14px;	
+    font-size: 13px;
    
 }    
-
 .btn {
 
     border-radius: 10px; 	
@@ -38,10 +41,11 @@ ion-content {
 
 
 
+
 .logo{
     
     width: 100%;
-    padding-top: 10%;
+    padding-top: 54%;
     
 }
     

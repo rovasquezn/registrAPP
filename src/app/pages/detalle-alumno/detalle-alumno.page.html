@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="micolor">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="/alumnos"></ion-back-button>
     </ion-buttons>
     <ion-title id="headerfooter">Detalle del Alumno</ion-title>
 
@@ -9,19 +9,31 @@
 </ion-header>
 
 <ion-content>
-  <br><br>
+  
   <ion-card>
+    <img [src]="alumn.foto"/>
     <ion-card-header>
-      <ion-card-title>NOMBRE: {{ alumn.nombre_usuario }}</ion-card-title>
+      <ion-card-title class="titulo">NOMBRE: {{ alumn.nombre_usuario }}</ion-card-title>
       <br>
-      <ion-card-subtitle>USUARIO: {{ alumn.usuario }}</ion-card-subtitle>
-      <ion-card-subtitle>SECCION: {{ alumn.seccion }}</ion-card-subtitle>
+      <ion-card-subtitle class="subtitulo">USUARIO: {{ alumn.usuario }}</ion-card-subtitle>
+      <ion-card-subtitle class="subtitulo"> SECCION: {{ alumn.seccion }}</ion-card-subtitle>
     </ion-card-header>
 
-    <ion-card-content>
+    <ion-card-content class="subtitulo2">
       
       Alumno(a) Matriculado en DUOC UC
    
     </ion-card-content>
   </ion-card>
+
+
+<ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
+
 </ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="micolor">
+    <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+  </ion-toolbar> 
+</ion-footer>

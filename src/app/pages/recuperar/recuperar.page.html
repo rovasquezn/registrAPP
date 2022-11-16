@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="micolor">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -13,14 +13,14 @@
   <ion-card>
     <ion-card-header>
       <br>
-      <ion-card-subtitle>Ingreso de Datos</ion-card-subtitle>
+      <ion-card-subtitle class="placeholders">Ingreso de Datos</ion-card-subtitle>
     </ion-card-header>
   
     <ion-card-content>
      <!--<form [formGroup]="formularioRecuperar">-->
         <form #formulario="ngForm">
           <ion-item>
-            <ion-label position="stacked">E-MAIL:</ion-label>
+            <ion-label class="placeholders" position="stacked">E-MAIL:</ion-label>
             <ion-input [(ngModel)]="email"
                         type="email" 
                         name="email"
@@ -38,15 +38,23 @@
                   (click) = "onSubmit()"
 
                   >RECUPERAR CONTRASEÑA</ion-button>
-        <br>
+        
 
     </ion-card-content>
+    <br>
   
   </ion-card>
   
-<br><br>
+
   
     <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
    
   
   </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar color="micolor">
+      <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
+    </ion-toolbar> 
+  </ion-footer>
+  

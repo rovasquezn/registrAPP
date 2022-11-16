@@ -8,16 +8,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
-
+import { IonicStorageModule } from '@ionic/storage-angular';
+import { SQLite } from '@awesome-cordova-plugins/sqlite/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, 
       IonicModule.forRoot(), 
       AppRoutingModule, 
-      HttpClientModule
+      HttpClientModule,
+      IonicStorageModule.forRoot()
     ],
-  providers: [BarcodeScanner,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [BarcodeScanner, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, SQLite],
 
   bootstrap: [AppComponent],
 })

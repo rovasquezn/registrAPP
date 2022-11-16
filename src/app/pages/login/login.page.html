@@ -1,6 +1,9 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title id="headerfooter">Inicio de sesión</ion-title>
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="headerfooter">Inicio de sesión Alumnos</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,50 +11,44 @@
   <br><br>
 <ion-card>
   <ion-card-header>
-    <ion-card-subtitle>Ingreso de Datos</ion-card-subtitle>
+    <ion-card-subtitle class="placeholders">Ingreso de Datos</ion-card-subtitle>
   </ion-card-header>
-
+ 
   <ion-card-content>
-    <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <ion-item>
-        <ion-label position="stacked">USUARIO:</ion-label>
-        <ion-input name="nombre" 
+        
+        <ion-label for="nombre" class="placeholders" position="stacked">NOMBRE:</ion-label>
+        <ion-input formControlName="nombre" 
                     type="text" 
                     class="placeholders" 
-                    placeholder="Ingrese nombre de usuario"
                     [(ngModel)]="usuario.nombre"
-                    required
-                    > </ion-input>
+                    placeholder="Ingrese nombre del alumno"> </ion-input>
 
       </ion-item>
       
       <ion-item>
-        <ion-label position="stacked">CONTRASEÑA:</ion-label>
-        <ion-input name="password" 
+        <ion-label for="password" class="placeholders" position="stacked">CONTRASEÑA:</ion-label>
+        <ion-input formControlName="password" 
                     type="password" 
-                    class="placeholders" 
-                    placeholder="Ingrese contraseña"
+                    class="placeholders"
                     [(ngModel)]="usuario.password" 
-                    required
-                    > </ion-input>
+                    placeholder="Ingrese contraseña"> </ion-input>
       </ion-item>
-    <ion-button class="btn" 
-                expand="block" 
-                routerLink="/inicio"
-            
-                [disabled]= "formulario.invalid"
-                type = "submit"
-                >INICIAR SESIÓN</ion-button>
+      
+    <ion-button class="btn" type="submit" (click)="loginUsuario()">INICIAR SESIÓN ALUMNOS</ion-button>
   </form>
+
   </ion-card-content>
 
 </ion-card>
 
-<div>
   <br>
 
-<ion-button expand="block" class="btn" routerLink="/recuperar">OLVIDÉ MI CONTRASEÑA</ion-button>
-</div>
+<ion-button class="btn" routerLink="/recuperar">OLVIDÉ MI CONTRASEÑA</ion-button>
+
+<ion-button class="btn" routerLink="/registrarse">REGISTRARSE / CUENTA NUEVA</ion-button>
+
 
 
   <ion-img class="logo" src="assets/logo registrapp.png"></ion-img>
@@ -60,7 +57,7 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="micolor">
     <ion-title id="headerfooter">Needham - Vásquez IT</ion-title>
   </ion-toolbar> 
 </ion-footer>
