@@ -1,0 +1,48 @@
+{
+  "alumnos": [
+    {
+      "contrasena": 123,
+      "foto": "https://media-exp1.licdn.com/dms/image/D4D35AQFxpdb36jUlnA/profile-framedphoto-shrink_800_800/0/1653864805184?e=1669089600&v=beta&t=HKce-jzNzSnwa1YGWfIjfEgpdlDM6MtUUDrg11wYnGE",
+      "nombre_usuario": "Derek Needham",
+      "seccion": "007V",
+      "usuario": "de.needham"
+    },
+    {
+      "contrasena": 123,
+      "foto": "https://media-exp1.licdn.com/dms/image/C4E03AQEGLGWs0F0Ohw/profile-displayphoto-shrink_800_800/0/1633760531493?e=1672876800&v=beta&t=OmaR7XiQVas-Nv0PVYKycU8XMmK4Y12fyxTAkC1cO1E",
+      "nombre_usuario": "Rodrigo Vásquez",
+      "seccion": "007V",
+      "usuario": "ro.vasquezn"
+    },
+    {
+      "contrasena": 123,
+      "foto": "https://media-exp1.licdn.com/dms/image/C4E03AQHc32b1u0hImA/profile-displayphoto-shrink_800_800/0/1585591682344?e=1672876800&v=beta&t=ozLs2GLTTlNnBpHjrU8V9O1x6iYbQEcyPL2MhQItWhE",
+      "nombre_usuario": "Nelly Becerra",
+      "seccion": "001D",
+      "usuario": "ne.becerra"
+    },
+	{
+      "contrasena": 123,
+      "foto": "https://media-exp1.licdn.com/dms/image/C4E03AQGX3pm7kHVYxA/profile-displayphoto-shrink_800_800/0/1634511441389?e=1672876800&v=beta&t=NyP5__ar5I7Bfx-W5XZIIX1uFHSGJD4IwQhOrfenfPw",
+      "nombre_usuario": "Jocelyn Alvarez",
+      "seccion": "007V",
+      "usuario": "jo.alvarez"
+    },
+	{
+      "contrasena": 123,
+      "foto": "https://media-exp1.licdn.com/dms/image/C4E03AQEAVgVqHP3YIw/profile-displayphoto-shrink_800_800/0/1634504427554?e=1672876800&v=beta&t=oOyyr1ekj2UK3ihvBZ3OCLkLmmza5w5gTetztqGE-_Y",
+      "nombre_usuario": "Evelyn Barrera",
+      "seccion": "007V",
+      "usuario": "ev.barrera"
+    },
+	{
+      "contrasena": 123,
+      "foto": "https://media-exp1.licdn.com/dms/image/C4E03AQGntxs6ct5JYg/profile-displayphoto-shrink_800_800/0/1634412020529?e=1672876800&v=beta&t=Q8q0Inhh1axL1TqpS0rIJGNmupBVbqu6opnYrnddlqY",
+      "nombre_usuario": "Cristian Bernal",
+      "seccion": "007V",
+      "usuario": "cr.bernal"
+    }
+
+
+  ]
+}
