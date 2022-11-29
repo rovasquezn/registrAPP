@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class DocentesService { urlBase= "https://apidocentes-default-rtdb.firebaseio.com/docentes.json";
+export class DocentesService { urlBase= "https://apidocentes3-default-rtdb.firebaseio.com/docentes.json";
 
 
 

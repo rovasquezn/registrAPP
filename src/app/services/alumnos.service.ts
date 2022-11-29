@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AlumnosService {
 
-  urlBase= "https://apialumnos-5d620-default-rtdb.firebaseio.com/alumnos.json";
+  urlBase= "https://apialumnos3-default-rtdb.firebaseio.com/alumnos.json";
 
 
 
